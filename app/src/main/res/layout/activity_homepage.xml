@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    tools:context=".homepage">
+
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/username"
+        android:orientation="vertical"
+        android:paddingTop="24sp">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi"
+            android:textColor="#170707"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Apa kabarmu hari ini?"/>
+
+        <!--<Button
+            android:id="@+id/btn_logout"
+            android:layout_gravity="center"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40sp"
+            android:background="#FF4000"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="16dp" />-->
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="320dp"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
